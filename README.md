@@ -85,13 +85,13 @@ Aplicación web empresarial que permite:
    SUPABASE_URL=tu_supabase_url
    SUPABASE_KEY=tu_anon_key
    SUPABASE_SERVICE_KEY=tu_service_key
-   GATEWAY_BASE_URL=https://176.52.129.49:26335
-   GATEWAY_USERNAME=Claro_cvergara_API
-   GATEWAY_PASSWORD=H0men3tw0rk@api
+   GATEWAY_BASE_URL=
+   GATEWAY_USERNAME=
+   GATEWAY_PASSWORD=
    GOOGLE_API_KEY=tu_google_api_key
    JWT_SECRET_KEY=genera_un_string_aleatorio_seguro
-   ADMIN_EMAIL=cesar.vergara@clarovtr.cl
-   ADMIN_PASSWORD=abundancia.28
+   ADMIN_EMAIL=
+   ADMIN_PASSWORD=
    ```
 
 **Opción B: Despliegue manual**
