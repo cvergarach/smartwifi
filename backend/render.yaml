@@ -1,0 +1,41 @@
+# ============================================
+# RENDER.YAML - Configuración de despliegue
+# ============================================
+
+services:
+  - type: web
+    name: wifi-analyzer-api
+    env: python
+    region: oregon
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_KEY
+        sync: false
+      - key: SUPABASE_SERVICE_KEY
+        sync: false
+      - key: GATEWAY_BASE_URL
+        sync: false
+      - key: GATEWAY_USERNAME
+        sync: false
+      - key: GATEWAY_PASSWORD
+        sync: false
+      - key: GOOGLE_API_KEY
+        sync: false
+      - key: JWT_SECRET_KEY
+        generateValue: true
+      - key: ADMIN_EMAIL
+        value: cesar.vergara@clarovtr.cl
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: ADMIN_NAME
+        value: Cesar Vergara
+      - key: ENVIRONMENT
+        value: production
+      - key: DEBUG
+        value: False
